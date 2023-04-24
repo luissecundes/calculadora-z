@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'DBZ Font';
+  src: url('fonts/Saiyan-Sans-Right-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.calculator {
+  display: inline-block;
+  border: 15px solid #1e1d1d;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Arial;
+  width: 350px;
+  background-image: linear-gradient(to bottom right, #FFDB00, #ec0b0b);
+  margin-left: 500px;
+  font-family: 'DBZ Font', sans-serif;
+
+}
+
+.display {
+  background-color: #eee;
+  border: 1px solid #212020;
+  border-radius: 3px;
+  padding: 5px;
+  text-align: right;
+  font-size: 35px;
+  margin-bottom: 10px;
+  width: 97%;
+  font-family: 'DBZ Font', sans-serif;
+
+  height: 40px;
+
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+  font-family: 'DBZ Font', sans-serif;
+
+}
+
+.key {
+  background-color: #fff;
+  border: 1px solid #161616;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: 'DBZ Font', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+
+}
+
+.zero {
+  grid-column: 1 / span 3;
+  font-family: 'DBZ Font', sans-serif;
+
+}
+
+.key:hover {
+  background-color: #f2f2f2;
+  font-family: 'DBZ Font', sans-serif;
+
+}
+
+.equals {
+  background-color: #e0e0e0;
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 2;
+  transition: all 0.3s ease;
+  font-family: 'DBZ Font', sans-serif;
+
+
+}
+
+@media (max-width: 480px) {
+  .keys {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .equals {
+    grid-row: 5 / span 2;
+  }
+
+}

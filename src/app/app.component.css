@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'DBZ Font';
+  src: url('fonts/Saiyan-Sans-Right-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'DBZ Font', sans-serif;
+}
+.dbz-title {
+  font-family: 'DBZ Font', sans-serif;
+  font-size: 70px;
+  text-shadow: 2px 2px #FFDB00;
+  -webkit-text-stroke: 2px #000;
+  margin-left: 505px;
+  background: linear-gradient(to right, #FFDB00 0%, #FFDB00 50%, transparent 50%, transparent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dbz-title::after {
+  content: "LADORA Z";
+  font-family: 'DBZ Font', sans-serif;
+  font-size: 70;
+  text-shadow: 2px 2px #FF0000;
+  background: linear-gradient(to right, transparent 0%, transparent 50%, #FF0000 50%, #FF0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 39px 0 0 0; /* Adiciona 20 pixels de espaço em cima */
+  height: 93vh; /* define a altura do body para 100% da altura da janela */
+  background: linear-gradient(to bottom right, #ffd700, #ffa500, #00ffff);
+}
+
+
+
+
